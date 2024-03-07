@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #dfe8ef;
+  background-color: #081b29;
   color: #081b29;
 }
 
@@ -28,7 +28,7 @@ body {
 .logo {
   position: relative;
   font-size: 25px;
-  color: #000000;
+  color: #00abf0;
   top: 6px;
   text-decoration: none;
   font-weight: 600;
@@ -48,8 +48,8 @@ body {
 
 /* design home */
 .home {
-  height: 80vh;
-  background: #dfe8ef;
+  height: 90vh;
+  background: #081b29;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -67,7 +67,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
-  color: #000000;
+  color: white;
   animation: slide-In1 2s ease forwards;
   white-space: nowrap;
 }
@@ -131,6 +131,7 @@ body {
   font-weight: bold;
   text-align: justify;
   animation: slide-In3 2s ease forwards;
+  color: white;
 }
 
 @keyframes slide-In3 {
@@ -150,7 +151,6 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
 }
 
 .home-content .btn-box {
@@ -417,4 +417,485 @@ body {
     bottom: -25rem;
     left: 23rem;
   }
+}
+
+/* experience */
+
+/* bagian nama dan info kontak */
+.experience {
+  height: 150vh;
+  margin-right: 150px; /* Menggunakan margin-right sebagai gantinya */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%; /* Menyesuaikan nilai padding sesuai kebutuhan */
+  position: relative; /* Menambahkan position: relative jika diperlukan */
+}
+
+.experience-content {
+  max-width: 700px;
+}
+
+.experience-content h1 {
+  position: relative;
+  right: -200px;
+  top: -280px;
+  padding: 0 40%;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #33b1ef;
+}
+
+.experience-content h3 {
+  position: relative;
+  right: -200px;
+  top: -280px;
+  padding: 0 40%;
+  color: white;
+}
+
+.experience-content p {
+  position: relative;
+  right: -260px;
+  top: -280px;
+  padding: 0 15%;
+  color: white;
+}
+/* akhir bagian info kontak */
+
+/* isi dari cv */
+.word strong {
+  position: relative;
+  right: -318px;
+  top: -170px;
+  padding: 0 50%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #2692c0; /* Warna untuk judul-judul kuat */
+}
+
+.word h3 {
+  position: relative;
+  right: -493px;
+  top: -250px;
+  max-width: 2000px; /* Memberikan batasan kelebaran */
+  text-align: start; /* Mengatur teks menjadi justified */
+  margin: 60px -50% auto; /* Memusatkan elemen h3 dan memberikan margin bawah */
+  padding: 1 30%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.intern strong {
+  position: relative;
+  white-space: nowrap;
+  right: -230px;
+  top: 200px;
+  padding: 0 0%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #2692c0; /* Warna untuk judul-judul kuat */
+}
+
+.intern h3 {
+  position: relative;
+  right: -290px;
+  top: 150px;
+  max-width: 1800px; /* Memberikan batasan kelebaran */
+  text-align: start; /* Mengatur teks menjadi justified */
+  margin: 60px -25% auto; /* Memusatkan elemen h3 dan memberikan margin bawah */
+  padding: 5 15%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.intern li {
+  color: white;
+}
+
+.intern em {
+  font-style: italic;
+  color: #33b1ef; /* Warna untuk teks yang diemphasize */
+}
+
+.skill p {
+  position: relative;
+  right: 823px;
+  top: 240px;
+}
+
+.skill ul {
+  position: relative;
+  right: 823px;
+  top: 220px;
+  color: white;
+}
+
+.skill h3 {
+  position: relative;
+  right: 823px;
+  top: 240px;
+  color: #33b1ef;
+}
+
+.skill strong {
+  color: #33b1ef;
+}
+
+.skill h3 {
+  white-space: nowrap;
+}
+
+.education strong {
+  position: relative;
+  right: 10px;
+  top: 450px;
+  padding: 0 0%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #2692c0;
+}
+
+.education h3 {
+  position: relative;
+  right: 10px;
+  top: 460px;
+  white-space: nowrap;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: white;
+}
+.word ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.word li {
+  margin-bottom: -800px;
+  margin-top: 100px; /* Sesuaikan nilai margin-top sesuai kebutuhan */
+}
+
+.word p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 200px; /* Sesuaikan nilai margin-top sesuai kebutuhan */
+  color: white;
+}
+
+/* Style untuk judul section */
+.word p strong {
+  align-self: flex-start;
+}
+
+/* akhir cv */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #33b1ef;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 5px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+
+  background-color: transparent;
+  text-decoration: none;
+  width: 160px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbtn,
+.dropdown:hover .dropdown-content {
+  background-color: transparent;
+  text-align: center;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  outline: none;
+  position: absolute;
+  background-color: #f50909;
+  min-width: 160px;
+  box-shadow: #33b1ef;
+  z-index: 1;
+  top: 100%;
+  left: 4px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ededed;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #7cd4dd;
+  transition: 2s;
+  border-radius: 100px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+/* experience end */
+
+/* portofolio */
+.heading {
+  position: relative;
+  top: 8rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 12rem;
+  color: #2692c0;
+}
+
+.portfolio-container {
+  display: grid;
+  height: 450px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.portfolio-container .portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+  /* height: 300px; */
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 2.1rem;
+  color: #2692c0;
+}
+
+.portfolio-layer p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0 1rem;
+  color: #2692c0;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.portfolio-layer a i {
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+}
+.contact h2 {
+  margin-bottom: 3rem;
+}
+.contact form {
+  max-width: 45rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  margin: 0.4rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+.contact form .btn {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1.1rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--main-color);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
 }
