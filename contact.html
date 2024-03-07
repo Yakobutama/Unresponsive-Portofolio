@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Contact Us Form</title>
+    <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #33b1ef;
+  top: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  background: transparent;
+  animation: slide-In 2s ease forwards;
+}
+
+@keyframes slide-In {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 6px;
+  }
+}
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #081b29;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+      }
+      form {
+        max-width: 400px;
+        width: 100%;
+        background-color: #0f3047;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #000000;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #4caf50;
+        color: #ededed;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
+
+     
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #33b1ef;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 5px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #081b29;
+  padding: 14px 16px;
+
+  background-color: transparent;
+  text-decoration: none;
+  width: 160px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbtn,
+.dropdown:hover .dropdown-content {
+  background-color: transparent;
+  text-align: center;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  outline: none;
+  position: absolute;
+  background-color: #f50909;
+  min-width: 160px;
+  box-shadow: #33b1ef;
+  z-index: 1;
+  top: 100%;
+  left: 4px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #081b29;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #7cd4dd;
+  transition: 2s;
+  border-radius: 100px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #33b1ef;
+}
+
+h2 {
+  position: relative;
+  color: #33b1ef;
+  margin: 20px;
+  right: -50px;
+}
+
+    </style>
+  </head>
+    <body>
+
+        <header class="header">
+        <a href="" class="logo">Oetama.s</a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="experience.html">experience & Education</a>
+          <a href="portofolio.html" class="portofolio">Portofolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+
+
+
+
+
+      <section class="contact">
+        <h2>Contact Me</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+               </div>
+               <div class="input-field field">
+                <input type="text" placeholder="Email addres" 
+                id="Email"
+                class="item" autocomplete="off">
+           </div>
+
+           <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="Phone"
+                class="item" autocomplete="off">
+           </div>
+           <div class="input-field field">
+            <input type="text" placeholder="Subject" 
+            id="Subject"
+            class="item" autocomplete="off">
+       </div>
+            
+       
+       <div class="textarea-field field">
+        <textarea name="" id="message" cols="30" 
+        rows="10" placeholder="Your Message" class="item" 
+        autocomplete="off" ></textarea>
+       </div>
+
+       <button type="submit">Send Message</button>
+        </form>
+
+     
+      </section>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="scriptt.js"></script>
+
+    </body>
+</html>

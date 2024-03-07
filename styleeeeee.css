@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #081b29;
+  color: #ffffff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #2692c0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* bagian nama dan info kontak */
+.experience {
+  height: 150vh;
+  margin-right: 150px; /* Menggunakan margin-right sebagai gantinya */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%; /* Menyesuaikan nilai padding sesuai kebutuhan */
+  position: relative; /* Menambahkan position: relative jika diperlukan */
+}
+
+.experience-content {
+  max-width: 700px;
+}
+
+.experience-content h1 {
+  position: relative;
+  right: -200px;
+  top: -280px;
+  padding: 0 40%;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #33b1ef;
+}
+
+.experience-content h3 {
+  position: relative;
+  right: -200px;
+  top: -280px;
+  padding: 0 40%;
+}
+
+.experience-content p {
+  position: relative;
+  right: -260px;
+  top: -280px;
+  padding: 0 15%;
+}
+/* akhir bagian info kontak */
+
+/* isi dari cv */
+.word strong {
+  position: relative;
+  right: -318px;
+  top: -170px;
+  padding: 0 50%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #2692c0; /* Warna untuk judul-judul kuat */
+}
+
+.word h3 {
+  position: relative;
+  right: -493px;
+  top: -250px;
+  max-width: 2000px; /* Memberikan batasan kelebaran */
+  text-align: start; /* Mengatur teks menjadi justified */
+  margin: 60px -50% auto; /* Memusatkan elemen h3 dan memberikan margin bawah */
+  padding: 1 30%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.intern strong {
+  position: relative;
+  white-space: nowrap;
+  right: -230px;
+  top: 200px;
+  padding: 0 0%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #2692c0; /* Warna untuk judul-judul kuat */
+}
+
+.intern h3 {
+  position: relative;
+  right: -290px;
+  top: 150px;
+  max-width: 1800px; /* Memberikan batasan kelebaran */
+  text-align: start; /* Mengatur teks menjadi justified */
+  margin: 60px -25% auto; /* Memusatkan elemen h3 dan memberikan margin bawah */
+  padding: 5 15%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.intern em {
+  font-style: italic;
+  color: #33b1ef; /* Warna untuk teks yang diemphasize */
+}
+
+.skill p {
+  position: relative;
+  right: 823px;
+  top: 240px;
+}
+
+.skill ul {
+  position: relative;
+  right: 823px;
+  top: 220px;
+}
+
+.skill h3 {
+  position: relative;
+  right: 823px;
+  top: 240px;
+  color: #33b1ef;
+}
+
+.skill strong {
+  color: #33b1ef;
+}
+
+.skill h3 {
+  white-space: nowrap;
+}
+
+.education strong {
+  position: relative;
+  right: 10px;
+  top: 450px;
+  padding: 0 0%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #2692c0;
+}
+
+.education h3 {
+  position: relative;
+  right: 10px;
+  top: 460px;
+  white-space: nowrap;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.word ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.word li {
+  margin-bottom: -800px;
+  margin-top: 100px; /* Sesuaikan nilai margin-top sesuai kebutuhan */
+}
+
+.word p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 200px; /* Sesuaikan nilai margin-top sesuai kebutuhan */
+}
+
+/* Style untuk judul section */
+.word p strong {
+  align-self: flex-start;
+}
+
+/* akhir cv */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #33b1ef;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 5px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+
+  background-color: transparent;
+  text-decoration: none;
+  width: 160px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbtn,
+.dropdown:hover .dropdown-content {
+  background-color: transparent;
+  text-align: center;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  outline: none;
+  position: absolute;
+  background-color: #f50909;
+  min-width: 160px;
+  box-shadow: #33b1ef;
+  z-index: 1;
+  top: 100%;
+  left: 4px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ededed;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #7cd4dd;
+  transition: 2s;
+  border-radius: 100px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
